@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+  background-color: #ffffff; /* Duplicated property */
+}
+
+h1 {
+  color: blue;
+  color: navy; /* Overwritten property */
+  font-size: 24px;
+}
+
+#todo-form {
+  margin-bottom: 20px;
+  /* Unused property */
+  display: none;
+  display: block;
+}
+
+#todo-input {
+  padding: 10px;
+  width: 200px;
+  /* Invalid property */
+  border: 1px solid #ccc
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  /* Repeated rule */
+  background-color: green;
+}
+
+.unused-class {
+  color: red; /* Unused class */
+}
