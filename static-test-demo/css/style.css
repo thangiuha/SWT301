@@ -60,23 +60,28 @@ a:hover {
 }
 
 /* Form styling */
+#user-input form div { /* Thêm style cho các div bao quanh label-input */
+    margin-bottom: 15px; /* Khoảng cách giữa các dòng trong form */
+}
+
 form label {
-    display: block;
+    display: block; /* Để label chiếm một dòng riêng hoặc inline-block tùy thiết kế */
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 form input[type="text"],
-form input[type="email"] {
+form input[type="email"],
+form input[type="password"] { /* Thêm input[type="password"] */
     width: calc(100% - 22px); /* Adjust for padding and border */
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box; /* Ensures padding doesn't add to width */
 }
 
-form button[type="submit"] {
+form button[type="submit"],
+form input[type="reset"] { /* Thêm input[type="reset"] */
     background-color: #007bff;
     color: white;
     padding: 10px 15px;
@@ -84,10 +89,18 @@ form button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    margin-right: 10px; /* Thêm khoảng cách nếu có nhiều nút */
 }
 
-form button[type="submit"]:hover {
+form button[type="submit"]:hover,
+form input[type="reset"]:hover { /* Thêm input[type="reset"] */
     background-color: #0056b3;
+}
+
+/* Class cho văn bản lỗi (thay thế thẻ font và inline style) */
+.error-text {
+    color: red;
+
 }
 
 footer {
@@ -95,8 +108,5 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
-    position: relative; /* Changed from fixed to relative for simplicity in demo */
-    bottom: 0;
-    width: 100%;
-    margin-top: 20px; /* Add some space before footer */
+    margin-top: 20px;
 }
