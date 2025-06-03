@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Test Demo</title> <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS inline cũng có thể bị coi là bad practice trong một số bộ quy tắc */
+        h1 { color: #333; } /* Trùng lặp với CSS file ngoài, có thể gây nhầm lẫn */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Static Test Demo Project! 🚀</h1>
+        </header>
+
+    <main>
+        <div id="intro">
+            <h2>About This Project</h2>
+            <p>This project includes HTML, CSS, and Java files to practice static analysis with SonarQube in VSCode.</p>
+            <p>The <a href="java/App.java" target="_blank">Java code</a> contains a simple application logic.</p>
+            <img src="images/placeholder.png"> </div>
+
+        <section id="java-output-placeholder">
+            <h2>Java Application Area</h2>
+            <p>Imagine the output or functionality of the Java application would be presented here.</p>
+            <div class="output-box">
+                Awaiting Java interaction...
+            </div>
+            <br /> </section>
+
+        <section id="user-input">
+            <h2>Sample Form</h2>
+            <form id="myForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <input type="password" id="password"> <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email"> <br><br>
+                <button type="submit">Submit</button>
+                <input type="button" value="Reset Form"> </form>
+        </section>
+
+        <section id="duplicate-content-example">
+            <h2>Another Section</h2>
+            <p>This is some sample text for another section to demonstrate content.</p>
+        </section>
+        <section id="duplicate-content-example-2">
+            <h2>Another Section</h2>
+            <p>This is some sample text for another section to demonstrate content.</p>
+        </section>
+
+        <font color="red">This text uses a deprecated font tag.</font>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Static Test Lab. <span>All rights reserved.</span></p>
+        </footer>
+
+    <script>
+        // var unusedVarInHTML = "test"; // Biến không được sử dụng
+        console.log("Inline script loaded.");
+        // function testFunc() { alert('Hello'); } // Hàm không được gọi (có thể bị cảnh báo unused)
+    </script>
+    </body>
+</html>
